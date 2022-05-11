@@ -1,0 +1,224 @@
+* {
+    margin:0;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.intro {
+    margin-top:auto;
+    background-image: url("https://www.teahub.io/photos/full/8-83222_technology-wallpaper-full-hd.jpg");
+    height: 75vh;
+}
+
+nav {
+    position:relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 5vw;
+    justify-content: center;
+    top:45vh;
+    text-align: center;
+    padding: .8vw 0vw;
+}
+.links {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-size: 1.5vw;
+    text-shadow:black 3px 3px 5px;
+    background-color:rgb(41, 41, 41);
+    border-radius: 5vw;
+    border: .2vw solid rgb(0, 183, 255);
+    padding: .8vw;
+    width: 25vw;
+}
+    .links:hover{
+        color:rgb(0, 183, 255);
+    }
+    .contact-link{
+        text-decoration: none;
+        color:rgb(207, 207, 207);
+    }
+        .contact-link:hover{
+            color: rgb(0, 183, 255);
+        }
+
+.hometext{
+    position:absolute;
+    left: 2vw;
+    top: 8vw;
+}
+    .myname {
+        color:rgb(0, 183, 255);
+        font-family: 'Dancing Script', cursive;
+        font-size: 5vw;
+        
+    }
+    .mydesc {
+        color:rgb(155, 155, 155);
+        text-align: right;
+    }
+
+
+/*  */
+/* PROJECTS */
+/*  */
+
+.project-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vw;
+    text-align: center;
+    border-radius: 5vw;
+    border-bottom: 1vw solid rgb(155, 155, 155);
+    margin: .5vw 5vw;
+    transition:all .5s;
+}
+    .ph-link {
+        text-decoration: none;
+        color:rgb(0, 183, 255);
+        transition:all .5s;
+    }
+        .ph-link:hover {
+            color:rgb(155, 155, 155);
+            transition:all .5s;
+        }
+            .ph-link:hover .project-header {
+                border-bottom: 1vw solid rgb(0, 183, 255);
+                transition:all .5s;
+            }
+
+.project-items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 2vw;
+    text-align: center;
+    column-gap: 1.5vw;
+    row-gap: 1vh;
+}
+.container {
+    position: relative;
+  }
+  
+  
+  .cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 101.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 183, 255);
+    border-radius: 2vw;
+  }
+  
+  .container:hover .cover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    .p-img{
+        width: 30vw;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+        border: 0.4vw solid rgb(0, 183, 255);
+    }
+
+/*  */
+/* CONTACT */
+/*  */
+
+.contact-con {
+    display: grid;
+    grid-template-columns: 25vw auto;
+    padding: 2vw 12vw;
+}
+    .contact-img {
+        width: 15vw;
+        border: 0.5vw solid rgb(155, 155, 155);
+        border-radius: 2vw;
+        transition: all 1.5s;
+    }
+        .contact-img:hover {
+            width: 20vw;
+            border: .4vw solid rgb(0, 183, 255);
+            transition: all 1.5s;
+
+        }
+    .contact-text {
+        color: rgb(155, 155, 155);
+        font-size: 2vw;
+        text-align: center;
+        display: grid;
+        align-items: center;
+    }
+        .blue-hl {
+            color:rgb(0, 183, 255);
+            font-weight: bold;
+        }
+
+
+/*  */
+/* FOOTER */
+/*  */
+
+footer{
+    display:grid;
+    grid-template-columns: auto auto;
+    border-top:.5vw solid rgb(0, 183, 255);
+    height:auto;
+    color:rgb(155, 155, 155);
+    padding: 1vw;
+}
+    .footer-name{
+        color:rgb(207, 207, 207);
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.2vw;
+        position:absolute;
+    }
+        .fn-link{
+            text-decoration: none;
+            color: rgb(207, 207, 207);
+        }
+            .fn-link:hover{
+                color: rgb(0, 183, 255);
+            }
+    .contact {
+        padding-top: 3vw;
+        padding-left: .5vw;
+        color:rgb(207, 207, 207);
+        font-size: 1.2vw;
+    }
+
+    .socials {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+        .insta-icon{
+            width: 5vw;
+        }
+        .fb-icon {
+            width: 7.5vw;
+        }
+        .gh-icon {
+            width: 6vw;
+        }
+            .soc-icon a:hover{
+                color:rgb(0, 183, 255);
+            }
